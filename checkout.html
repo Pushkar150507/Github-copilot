@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout — ShopFlix</title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      .checkout{padding:2rem 0}
+      .checkout-grid{display:grid;grid-template-columns:1fr 360px;gap:1.25rem}
+      .order-summary{background:var(--card);padding:1rem;border-radius:8px}
+      .summary-item{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+      .form-card{background:var(--card);padding:1rem;border-radius:8px}
+      .field{display:flex;flex-direction:column;margin-bottom:.6rem}
+      .field label{font-size:.85rem;margin-bottom:.25rem;color:rgba(255,255,255,0.8)}
+      .field input,.field select{padding:.5rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff}
+      @media (max-width:900px){.checkout-grid{grid-template-columns:1fr}}
+    </style>
+  </head>
+  <body class="dark">
+    <header class="topbar">
+      <div class="topbar-inner container">
+        <div class="brand">ShopFlix</div>
+        <div class="actions">
+          <a href="index.html" class="btn outline">← Continue shopping</a>
+        </div>
+      </div>
+    </header>
+    <main class="container checkout">
+      <h1>Checkout</h1>
+      <div class="checkout-grid">
+        <div>
+          <div class="form-card">
+            <h3>Shipping Information</h3>
+            <div class="field"><label for="fullname">Full name</label><input id="fullname"></div>
+            <div class="field"><label for="address">Address</label><input id="address"></div>
+            <div class="field"><label for="city">City</label><input id="city"></div>
+            <div style="display:flex;gap:.5rem"><div class="field" style="flex:1"><label for="zip">ZIP</label><input id="zip"></div><div class="field" style="flex:1"><label for="country">Country</label><input id="country"></div></div>
+            <h3 style="margin-top:1rem">Payment</h3>
+            <div class="field"><label for="card">Card number</label><input id="card" placeholder="4242 4242 4242 4242"></div>
+            <div style="display:flex;gap:.5rem"><div class="field" style="flex:1"><label for="exp">Expiry</label><input id="exp"></div><div class="field" style="flex:1"><label for="cvc">CVC</label><input id="cvc"></div></div>
+            <div style="margin-top:.75rem"><button id="placeOrder" class="btn primary">Place Order</button></div>
+          </div>
+        </div>
+        <aside>
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="itemsList"></div>
+            <div class="summary-item"><strong>Total</strong><strong>$<span id="orderTotal">0.00</span></strong></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script>
+      function renderCheckout(){
+        const raw = localStorage.getItem('shopCart');
+        let cart = [];
+        try{ cart = raw ? JSON.parse(raw) : []; }catch(e){ cart = []; }
+        const itemsList = document.getElementById('itemsList');
+        const orderTotal = document.getElementById('orderTotal');
+        itemsList.innerHTML = '';
+        if(cart.length === 0){
+          itemsList.innerHTML = '<div class="cart-empty">No items in your cart.</div>';
+          orderTotal.textContent = '0.00';
+          return;
+        }
+        let total = 0;
+        cart.forEach(i=>{
+          const line = document.createElement('div');
+          line.className = 'summary-item';
+          const amount = (i.price * i.qty);
+          total += amount;
+          line.innerHTML = `<div>${i.name} <small style="color:rgba(255,255,255,0.6)">x ${i.qty}</small></div><div>$${amount.toFixed(2)}</div>`;
+          itemsList.appendChild(line);
+        });
+        orderTotal.textContent = total.toFixed(2);
+      }
+
+      document.getElementById('placeOrder').addEventListener('click', ()=>{
+        // very small validation
+        const name = document.getElementById('fullname').value;
+        if(!name){ alert('Please enter your full name'); return; }
+        // clear cart and redirect to thank you
+        localStorage.removeItem('shopCart');
+        window.location.href = 'thankyou.html';
+      });
+
+      renderCheckout();
+    </script>
+  </body>
+</html>

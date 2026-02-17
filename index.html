@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StreamFlow — Browse Shows</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="dark">
+    <header class="topbar">
+      <div class="topbar-inner container">
+        <div class="brand">ShopFlix</div>
+        <nav class="topnav">
+          <a href="#">Home</a>
+          <a href="#watches">Watches</a>
+          <a href="#bags">Bags</a>
+          <a href="#tshirts">T-Shirts</a>
+          <a href="#hoodies">Hoodies</a>
+          <a href="#">Deals</a>
+        </nav>
+        <div class="actions">
+          <input class="search" placeholder="Search products" aria-label="Search">
+          <button id="cartToggle" class="cart-icon" aria-label="Open cart">🛒 <span id="cartCount" class="cart-count">0</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-large">
+        <div class="hero-bg" style="background-image:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://picsum.photos/seed/featured/1600/700')"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">Featured Product</h1>
+          <p class="hero-desc">Limited-time offer — free shipping on featured item.</p>
+          <div class="hero-actions">
+            <button class="btn primary" data-name="Featured Product" data-price="129.99">Buy Now — $129.99</button>
+            <button class="btn outline" id="heroAdd" data-name="Featured Product" data-price="129.99">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="rows container">
+        <h2 class="rows-title" id="watches">Watches</h2>
+        <div class="row" data-row="watches">
+          <button class="row-btn left">‹</button>
+          <div class="row-items">
+            <div class="card">
+              <img src="https://cdn.shopify.com/s/files/1/0125/7792/products/avt-182-aviator-watch-mig-29-smt-chrono-m-2-30-0-220-6.jpg?v=1537960270" alt="Aviator Chrono">
+              <div class="card-info">
+                <div class="card-title">Aviator Chrono</div>
+                <div class="card-price">$249.00</div>
+                <button class="add-btn" data-name="Aviator Chrono" data-price="249">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://m.media-amazon.com/images/I/61cU8T1tQpL._SX679_.jpg" alt="Minimal Classic">
+              <div class="card-info">
+                <div class="card-title">Minimal Classic</div>
+                <div class="card-price">$129.00</div>
+                <button class="add-btn" data-name="Minimal Classic" data-price="129">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/heritage/300/170" alt="Watch 3">
+              <div class="card-info">
+                <div class="card-title">Heritage Luxe</div>
+                <div class="card-price">$399.00</div>
+                <button class="add-btn" data-name="Heritage Luxe" data-price="399">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/trail/300/170" alt="Watch 4">
+              <div class="card-info">
+                <div class="card-title">Trail Runner</div>
+                <div class="card-price">$179.00</div>
+                <button class="add-btn" data-name="Trail Runner" data-price="179">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <button class="row-btn right">›</button>
+        </div>
+
+        <h2 class="rows-title" id="bags">Bags</h2>
+        <div class="row" data-row="bags">
+          <button class="row-btn left">‹</button>
+          <div class="row-items">
+            <div class="card">
+              <img src="https://picsum.photos/seed/backpack/300/170" alt="Bag 1">
+              <div class="card-info">
+                <div class="card-title">Everyday Backpack</div>
+                <div class="card-price">$69.99</div>
+                <button class="add-btn" data-name="Everyday Backpack" data-price="69.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/citytote/300/170" alt="Bag 2">
+              <div class="card-info">
+                <div class="card-title">City Tote</div>
+                <div class="card-price">$89.99</div>
+                <button class="add-btn" data-name="City Tote" data-price="89.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/leathermessenger/300/170" alt="Bag 3">
+              <div class="card-info">
+                <div class="card-title">Leather Messenger</div>
+                <div class="card-price">$149.99</div>
+                <button class="add-btn" data-name="Leather Messenger" data-price="149.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/weekendduffel/300/170" alt="Bag 4">
+              <div class="card-info">
+                <div class="card-title">Weekend Duffel</div>
+                <div class="card-price">$119.99</div>
+                <button class="add-btn" data-name="Weekend Duffel" data-price="119.99">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <button class="row-btn right">›</button>
+        </div>
+
+        <h2 class="rows-title" id="tshirts">T-Shirts</h2>
+        <div class="row" data-row="tshirts">
+          <button class="row-btn left">‹</button>
+          <div class="row-items">
+            <div class="card">
+              <img src="https://picsum.photos/seed/essentialtee/300/170" alt="Tshirt 1">
+              <div class="card-info">
+                <div class="card-title">Essential Tee</div>
+                <div class="card-price">$19.99</div>
+                <button class="add-btn" data-name="Essential Tee" data-price="19.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/graphictee/300/170" alt="Tshirt 2">
+              <div class="card-info">
+                <div class="card-title">Graphic Tee</div>
+                <div class="card-price">$24.99</div>
+                <button class="add-btn" data-name="Graphic Tee" data-price="24.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/organictee/300/170" alt="Tshirt 3">
+              <div class="card-info">
+                <div class="card-title">Organic Cotton Tee</div>
+                <div class="card-price">$29.99</div>
+                <button class="add-btn" data-name="Organic Cotton Tee" data-price="29.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/vintagetee/300/170" alt="Tshirt 4">
+              <div class="card-info">
+                <div class="card-title">Vintage Print Tee</div>
+                <div class="card-price">$34.99</div>
+                <button class="add-btn" data-name="Vintage Print Tee" data-price="34.99">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <button class="row-btn right">›</button>
+        </div>
+
+        <h2 class="rows-title" id="hoodies">Hoodies</h2>
+        <div class="row" data-row="hoodies">
+          <button class="row-btn left">‹</button>
+          <div class="row-items">
+            <div class="card">
+              <img src="https://picsum.photos/seed/pulloverhoodie/300/170" alt="Hoodie 1">
+              <div class="card-info">
+                <div class="card-title">Pullover Hoodie</div>
+                <div class="card-price">$49.99</div>
+                <button class="add-btn" data-name="Pullover Hoodie" data-price="49.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/zipuphoodie/300/170" alt="Hoodie 2">
+              <div class="card-info">
+                <div class="card-title">Zip-Up Hoodie</div>
+                <div class="card-price">$59.99</div>
+                <button class="add-btn" data-name="Zip-Up Hoodie" data-price="59.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/fleecehoodie/300/170" alt="Hoodie 3">
+              <div class="card-info">
+                <div class="card-title">Fleece Hoodie</div>
+                <div class="card-price">$69.99</div>
+                <button class="add-btn" data-name="Fleece Hoodie" data-price="69.99">Add to cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/seed/oversizedhoodie/300/170" alt="Hoodie 4">
+              <div class="card-info">
+                <div class="card-title">Oversized Hoodie</div>
+                <div class="card-price">$79.99</div>
+                <button class="add-btn" data-name="Oversized Hoodie" data-price="79.99">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <button class="row-btn right">›</button>
+        </div>
+      </section>
+
+      <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+          <h3>Your Cart</h3>
+          <button id="closeCart" aria-label="Close cart">✕</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+          <button class="btn primary" id="checkout">Checkout</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 StreamFlow — Demo UI</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
