@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pushkar Rai | CSE AIML Portfolio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#000000",
+                    "on-background": "#ffffff",
+                    "surface": "#0a0a0a",
+                    "on-surface": "#ffffff",
+                    "surface-variant": "#1a1a1a",
+                    "on-surface-variant": "#a1a1a1",
+                    "primary": "#4ade80", // Green accent
+                    "on-primary": "#000000",
+                    "secondary": "#facc15", // Yellow accent
+                    "on-secondary": "#000000",
+                    "outline": "#333333",
+                    "surface-container-low": "#0d0d0d",
+                    "surface-container": "#141414",
+                    "surface-container-high": "#1f1f1f",
+                    "surface-container-highest": "#262626"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0rem",
+                    "lg": "0.125rem",
+                    "xl": "0.25rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vector-grid {
+            background-image: linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+                              linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .scanline {
+            background: linear-gradient(to bottom, transparent 50%, rgba(74, 222, 128, 0.05) 50%);
+            background-size: 100% 4px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-background/90 border-b border-outline backdrop-blur-md">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 bg-primary animate-pulse"></div>
+<span class="text-xl font-bold text-on-surface tracking-tighter font-headline uppercase">Pushkar_Rai.exe</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-label font-medium tracking-widest text-xs uppercase">
+<a class="text-primary border-b border-primary pb-1 transition-all" href="#">[ Home ]</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">[ About ]</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">[ Projects ]</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">[ Contact ]</a>
+</div>
+<button class="border border-primary text-primary px-6 py-1 text-sm font-label uppercase hover:bg-primary hover:text-on-primary transition-all">Resume_v2</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden bg-background">
+<div class="absolute inset-0 vector-grid opacity-50 pointer-events-none"></div>
+<div class="absolute inset-0 scanline pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+<div class="md:col-span-7">
+<span class="inline-block text-primary font-label font-bold tracking-[0.3em] mb-6 uppercase text-xs border-l-2 border-primary pl-4">System Initializing... AI/ML Module Loaded</span>
+<h1 class="text-7xl md:text-9xl font-headline font-bold text-on-surface tracking-tighter leading-none mb-8 uppercase">
+                Pushkar <span class="text-secondary">Rai</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light mb-10 max-w-2xl leading-relaxed font-mono">
+                &gt; CSE AIML Student crafting the future through <span class="text-primary">mathematical_logic</span> and high-precision code.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-bold uppercase text-sm hover:translate-x-1 hover:-translate-y-1 transition-all border-b-4 border-r-4 border-green-800 active:translate-y-0 active:translate-x-0 active:border-0">
+                    Execute Projects
+                </button>
+<button class="border border-outline text-on-surface-variant px-8 py-4 font-bold uppercase text-sm hover:border-secondary hover:text-secondary transition-all">
+                    Access Research
+                </button>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="relative z-10 border border-primary p-2 group">
+<div class="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-primary"></div>
+<div class="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-primary"></div>
+<div class="overflow-hidden grayscale contrast-125 brightness-90 group-hover:grayscale-0 transition-all duration-1000">
+<img alt="Pushkar Rai Portrait" class="w-full h-[500px] object-cover" data-alt="Modern minimalist portrait of a young male professional in a neutral setting with soft natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-5dgN6K9ItxWIhoFIgNvdRsV5IBw1KttQcUWti9ZOJ2iN8E3Xf9FHcQOaqfZr_3qsPdzb0eW_lgJpzFoFoxJk11VH6ffV07yeeRMQyV2xfDbmdoefkwinaKLZLApn6SNNGXwCGrmIBH2cFMvl0YEsjt9wGnYJ3ak74BC7XUub6_6wHWfsZ1q0tFRXl74bTSuAsTS9wCAY8GSKk2yceRLlllBOFAvFxq7hAYmOH32RxQ9ohqMuEe1wYl-5rd89-ixCGqY70ofX99I"/>
+</div>
+<div class="mt-4 font-mono text-[10px] text-primary flex justify-between uppercase tracking-widest">
+<span>Identity_Scan: Verified</span>
+<span>Status: Active</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="py-32 bg-surface-container-low border-y border-outline">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="text-xs font-label font-bold text-secondary tracking-[0.4em] mb-8 uppercase">// MISSION_STATEMENT</h2>
+<p class="text-4xl font-headline font-medium text-on-surface leading-tight uppercase italic border-l-4 border-secondary pl-8">
+                Bridging the gap between raw data and <span class="text-primary not-italic">intelligent behavior</span>.
+            </p>
+</div>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-mono">
+<p>
+                [As a Computer Science Engineering student specializing in AI and ML, I approach technology as both a mathematical challenge and a tool for creative problem-solving.]
+            </p>
+<p>
+                &gt; Current focus: Generative AI and Deep Reinforcement Learning. Goal: Designing systems as elegant in code as they are powerful in execution.
+            </p>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="py-32 bg-background relative">
+<div class="absolute inset-0 vector-grid opacity-10 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16 border-b border-outline pb-8">
+<div>
+<h2 class="text-xs font-label font-bold text-primary tracking-[0.4em] mb-4 uppercase">// CORE_COMPETENCIES</h2>
+<h3 class="text-5xl font-headline font-bold text-on-surface uppercase">The Intelligence Stack</h3>
+</div>
+<div class="hidden md:block font-mono text-xs text-on-surface-variant">
+                BUILD_VERSION: 4.0.1<br/>STABILITY: 99.8%
+            </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4">
+<!-- Python & Frameworks -->
+<div class="md:col-span-2 bg-surface-container-high p-10 border border-outline hover:border-primary transition-all group">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">terminal</span>
+<h4 class="text-2xl font-headline font-bold uppercase tracking-tighter">ML_CORE.EXE</h4>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 border border-primary text-primary text-[10px] font-mono uppercase">Python</span>
+<span class="px-3 py-1 border border-primary text-primary text-[10px] font-mono uppercase">PyTorch</span>
+<span class="px-3 py-1 border border-primary text-primary text-[10px] font-mono uppercase">TensorFlow</span>
+<span class="px-3 py-1 border border-primary text-primary text-[10px] font-mono uppercase">NumPy</span>
+<span class="px-3 py-1 border border-primary text-primary text-[10px] font-mono uppercase">Scikit-learn</span>
+</div>
+</div>
+<!-- Computer Vision -->
+<div class="md:col-span-1 bg-surface-container p-10 border border-outline hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">visibility</span>
+<h4 class="text-xl font-headline font-bold mb-4 uppercase">Vis_Processing</h4>
+<p class="text-on-surface-variant text-xs font-mono">Object detection, segmentation, and GAN architectures.</p>
+</div>
+<!-- NLP -->
+<div class="md:col-span-1 bg-surface-container p-10 border border-outline hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">psychology</span>
+<h4 class="text-xl font-headline font-bold mb-4 uppercase">Ling_Analytic</h4>
+<p class="text-on-surface-variant text-xs font-mono">Transformers, Sentiment Analysis, LLM Optimization.</p>
+</div>
+<!-- Data Science -->
+<div class="md:col-span-1 bg-surface-container p-10 border border-outline hover:border-secondary transition-all group">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6">analytics</span>
+<h4 class="text-xl font-headline font-bold mb-4 uppercase">Data_Viz</h4>
+<p class="text-on-surface-variant text-xs font-mono">Matplotlib, Seaborn, Tableau dashboarding.</p>
+</div>
+<!-- Engineering -->
+<div class="md:col-span-3 bg-surface-container-highest p-10 border border-outline flex items-center justify-between group hover:border-primary transition-all">
+<div>
+<h4 class="text-2xl font-headline font-bold mb-4 uppercase">Engineering_Excellence</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary text-on-primary text-[10px] font-mono font-bold uppercase">Git</span>
+<span class="px-3 py-1 bg-primary text-on-primary text-[10px] font-mono font-bold uppercase">Docker</span>
+<span class="px-3 py-1 bg-primary text-on-primary text-[10px] font-mono font-bold uppercase">SQL</span>
+<span class="px-3 py-1 bg-primary text-on-primary text-[10px] font-mono font-bold uppercase">C++</span>
+</div>
+</div>
+<div class="hidden lg:flex flex-col items-end gap-1 opacity-20 group-hover:opacity-100 transition-all">
+<div class="w-16 h-1 bg-primary"></div>
+<div class="w-12 h-1 bg-primary"></div>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Preview Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20">
+<h2 class="text-xs font-label font-bold text-secondary tracking-[0.4em] mb-4 uppercase">// APPLIED_INTELLIGENCE</h2>
+<h3 class="text-6xl font-headline font-bold text-on-surface uppercase">Deployment_Registry</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<!-- Project Card 1 -->
+<div class="group relative">
+<div class="absolute -inset-2 border border-primary/20 scale-95 group-hover:scale-100 transition-all pointer-events-none"></div>
+<div class="bg-background border border-outline overflow-hidden mb-8 transition-all duration-500">
+<div class="h-80 overflow-hidden relative border-b border-outline">
+<img alt="Neural Network Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 contrast-125 brightness-75" data-alt="Abstract rendering of 3D neural network node connections with glowing blue light paths on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp_1WGDMjMOCbsVwb6mXVVl2XqSkQv4lyenGg6_IT493mb9QA56zAh6P4HCXkAAsYdbDoXvvLSuqdgNJjyA2XJg3z0XgqsBQOxGAxMIRskhwj-KdeY5svPYCr_VvwshTJR-pSnGkOy9O2kddTr2yp-w3mNDq-y1SlMxyNI5UUjZMx_YvaL5PX_ZP6hXX7aknUGcl1Ak_QuQGMYe1VZm5SjlpWY8jh1lWhpSHCC-48pRRBUTmHLLbLHYWNS5pc5Hd-zhToZwGlUNrc"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2 py-0.5 bg-background border border-primary text-[10px] font-bold text-primary uppercase">PyTorch</span>
+<span class="px-2 py-0.5 bg-background border border-primary text-[10px] font-bold text-primary uppercase">CV</span>
+</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-4 uppercase tracking-tighter text-on-surface group-hover:text-primary transition-colors">SynapseDet: Real-time Object Detection</h4>
+<p class="text-on-surface-variant mb-6 leading-relaxed font-mono text-sm">
+                            &gt; A custom YOLO-based architecture optimized for medical imaging, achieving a 98.4% mAP on diagnostic datasets.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary text-xs font-bold font-label uppercase hover:gap-4 transition-all" href="#">
+                            [ Access_Module ] <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative">
+<div class="absolute -inset-2 border border-secondary/20 scale-95 group-hover:scale-100 transition-all pointer-events-none"></div>
+<div class="bg-background border border-outline overflow-hidden mb-8 transition-all duration-500">
+<div class="h-80 overflow-hidden relative border-b border-outline">
+<img alt="Code Terminal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 contrast-125 brightness-75" data-alt="Minimalist top-down view of a modern laptop showing lines of Python code with syntax highlighting in a bright editorial studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ5o8D7RMEE1D9lE1YJxl8rZK73rb8WOWPpzLSpdERL3B3vQn_zvTlUJhLUC_Ch5DGBCnroCR8Ek8xCx1h01cganXOS9v1Kn-eorFus1DM_NGP8Ch_qgbLddbvEqCb5YLqV_VtnW-uBxKQDS6IgwaqNP8RefDY9QvSodpKKbskVU3PM7tVpTryV6ckFyUY4w_uoTHheKIaedU6TQUaZhLwWcpBGQRENjxqkqlYoK_rLVz5S9JaMu0E7Al_apo0eRu3jhRqLqnWH3Q"/>
+<div class="absolute top-4 left-4 flex gap-2">
+<span class="px-2 py-0.5 bg-background border border-secondary text-[10px] font-bold text-secondary uppercase">BERT</span>
+<span class="px-2 py-0.5 bg-background border border-secondary text-[10px] font-bold text-secondary uppercase">NLP</span>
+</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-headline font-bold mb-4 uppercase tracking-tighter text-on-surface group-hover:text-secondary transition-colors">LinguistAI: Sentiment Contextualizer</h4>
+<p class="text-on-surface-variant mb-6 leading-relaxed font-mono text-sm">
+                            &gt; Deep learning model focusing on nuance and sarcasm in multilingual social media data using transformer architectures.
+                        </p>
+<a class="inline-flex items-center gap-2 text-secondary text-xs font-bold font-label uppercase hover:gap-4 transition-all" href="#">
+                            [ Access_Module ] <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 text-center">
+<button class="px-12 py-4 border border-primary text-primary font-bold font-label uppercase text-xs hover:bg-primary hover:text-on-primary transition-all">
+                Full_Archive.zip
+            </button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-background border-t border-outline overflow-hidden relative">
+<div class="absolute inset-0 vector-grid opacity-20 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
+<h2 class="text-5xl md:text-8xl font-headline font-bold mb-8 uppercase text-on-surface tracking-tighter">Ready to <span class="text-primary italic">evolve?</span></h2>
+<p class="text-xl md:text-2xl font-mono text-on-surface-variant mb-12 max-w-2xl mx-auto">
+            &gt; Currently seeking internship opportunities in AIML research. Let's build something intelligent.
+        </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-primary text-on-primary px-10 py-4 font-bold text-sm uppercase hover:bg-white transition-all" href="mailto:contact@pushkarrai.com">
+                Establish_Connection
+            </a>
+<a class="border border-on-surface text-on-surface px-10 py-4 font-bold text-sm uppercase hover:border-secondary hover:text-secondary transition-all" href="#">
+                Download_CV.pdf
+            </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline bg-background font-mono text-[10px] tracking-widest text-on-surface-variant uppercase">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-10 gap-6">
+<div class="font-headline font-bold text-on-surface text-base tracking-tighter">Pushkar_Rai</div>
+<div class="text-center md:text-left opacity-50">
+            © 2024 PR_SYSTEMS. Built with Vector Void Logic.
+        </div>
+<div class="flex gap-8">
+<a class="hover:text-primary transition-all" href="#">LinkedIn</a>
+<a class="hover:text-primary transition-all" href="#">GitHub</a>
+<a class="hover:text-primary transition-all" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>

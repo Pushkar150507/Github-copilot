@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#ffffff",
+                    "on-secondary-container": "#000000",
+                    "on-secondary-fixed-variant": "#a3e635",
+                    "surface-dim": "#1a1a1a",
+                    "inverse-surface": "#f8fafc",
+                    "on-surface-variant": "#94a3b8",
+                    "surface-container-highest": "#262626",
+                    "surface": "#000000",
+                    "primary-fixed-dim": "#facc15",
+                    "secondary-fixed-dim": "#a3e635",
+                    "primary": "#facc15",
+                    "on-primary": "#000000",
+                    "surface-container-low": "#0a0a0a",
+                    "on-primary-container": "#facc15",
+                    "on-secondary": "#000000",
+                    "on-tertiary-container": "#ffffff",
+                    "outline": "#404040",
+                    "on-tertiary-fixed-variant": "#ffffff",
+                    "surface-variant": "#171717",
+                    "tertiary-fixed-dim": "#ffffff",
+                    "outline-variant": "#262626",
+                    "surface-container-lowest": "#000000",
+                    "secondary-dim": "#84cc16",
+                    "tertiary-container": "#171717",
+                    "on-primary-fixed": "#000000",
+                    "surface-container": "#111111",
+                    "inverse-on-surface": "#000000",
+                    "on-surface": "#ffffff",
+                    "tertiary-fixed": "#ffffff",
+                    "error": "#ef4444",
+                    "secondary": "#a3e635",
+                    "secondary-container": "#a3e635",
+                    "primary-dim": "#eab308",
+                    "on-tertiary-fixed": "#000000",
+                    "primary-container": "#fef08a",
+                    "error-container": "#450a0a",
+                    "primary-fixed": "#fef9c3",
+                    "tertiary": "#ffffff",
+                    "tertiary-dim": "#e5e5e5",
+                    "surface-container-high": "#1a1a1a",
+                    "on-primary-fixed-variant": "#000000",
+                    "secondary-fixed": "#d9f99d",
+                    "inverse-primary": "#000000",
+                    "on-secondary-fixed": "#000000",
+                    "on-error-container": "#fca5a5",
+                    "surface-bright": "#0a0a0a",
+                    "on-tertiary": "#000000",
+                    "background": "#000000",
+                    "on-error": "#000000",
+                    "surface-tint": "#facc15",
+                    "error-dim": "#991b1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "0px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vector-glow {
+            box-shadow: 0 0 20px rgba(163, 230, 53, 0.1);
+        }
+        .algorithm-grid {
+            background-image: linear-gradient(#1a1a1a 1px, transparent 1px), linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .terminal-border {
+            border: 1px solid #262626;
+        }
+        .terminal-border-active {
+            border: 1px solid #a3e635;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-black">
+<!-- Top Navigation -->
+<nav class="w-full sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="text-xl font-bold text-white tracking-tighter font-headline flex items-center gap-2">
+<span class="w-3 h-3 bg-secondary"></span>
+            Pushkar Rai
+        </div>
+<div class="hidden md:flex items-center gap-10 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Projects</a>
+<a class="text-secondary font-bold border-b border-secondary pb-1 transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-transparent border border-secondary text-secondary px-6 py-2 rounded-none font-medium hover:bg-secondary hover:text-black active:scale-95 transition-all">
+            RESUME.PDF
+        </button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-24 pb-12 overflow-hidden border-b border-outline-variant">
+<div class="absolute inset-0 algorithm-grid opacity-40 -z-10"></div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="text-xs font-bold tracking-[0.4em] text-secondary uppercase mb-4 block">// ESTABLISH_CONNECTION</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-white tracking-tighter leading-[0.9] mb-6">
+                    Bridging Human <br/> <span class="text-primary">Intuition</span> with AI.
+                </h1>
+</div>
+<div class="lg:col-span-4 pb-4">
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-sm border-l border-secondary pl-6">
+                    Whether it's a complex neural architecture or a simple question about data ethics, I'm always open to new collaborative challenges.
+                </p>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Contact Form Column -->
+<div class="lg:col-span-7 bg-surface-container-low terminal-border p-8 md:p-12 vector-glow">
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="text-[10px] uppercase tracking-[0.3em] text-secondary mb-2 block font-bold">01_FULL_NAME</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:border-secondary transition-colors placeholder:text-outline text-on-surface" placeholder="Alan Turing" type="text"/>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-[0.3em] text-secondary mb-2 block font-bold">02_EMAIL_ADDRESS</label>
+<input class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:border-secondary transition-colors placeholder:text-outline text-on-surface" placeholder="alan@enigma.org" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-[0.3em] text-secondary mb-2 block font-bold">03_INQUIRY_TYPE</label>
+<div class="flex flex-wrap gap-3 pt-2">
+<label class="cursor-pointer">
+<input checked="" class="hidden peer" name="type" type="radio"/>
+<span class="px-5 py-2 border border-outline text-sm peer-checked:bg-secondary peer-checked:text-black peer-checked:border-secondary transition-all">Collaboration</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="type" type="radio"/>
+<span class="px-5 py-2 border border-outline text-sm peer-checked:bg-secondary peer-checked:text-black peer-checked:border-secondary transition-all">Consulting</span>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="type" type="radio"/>
+<span class="px-5 py-2 border border-outline text-sm peer-checked:bg-secondary peer-checked:text-black peer-checked:border-secondary transition-all">Hello</span>
+</label>
+</div>
+</div>
+<div class="relative">
+<label class="text-[10px] uppercase tracking-[0.3em] text-secondary mb-2 block font-bold">04_MESSAGE_BODY</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline py-3 px-0 focus:ring-0 focus:border-secondary transition-colors placeholder:text-outline resize-none text-on-surface" placeholder="Describe your vision or technical challenge..." rows="4"></textarea>
+</div>
+<button class="group flex items-center gap-3 bg-secondary text-black px-8 py-4 rounded-none font-bold hover:gap-5 transition-all" type="submit">
+                        INITIALIZE_CONTACT
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</form>
+</div>
+<!-- Info & Social Column -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div class="space-y-12">
+<!-- Location & Time -->
+<div class="space-y-4">
+<h3 class="text-[10px] uppercase tracking-[0.3em] text-secondary font-bold">TECH_BASE_LOC</h3>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 bg-surface-container-high terminal-border flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-white font-semibold">Bengaluru, India</p>
+<p class="text-sm text-on-surface-variant">Global Delivery Hub • IST Timezone</p>
+</div>
+</div>
+</div>
+<!-- Social Links -->
+<div class="space-y-6">
+<h3 class="text-[10px] uppercase tracking-[0.3em] text-secondary font-bold">DIGITAL_NODES</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="group flex items-center justify-between p-4 bg-surface-container-low terminal-border hover:border-secondary transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary">share</span>
+<span class="font-medium text-white">LinkedIn</span>
+</div>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity text-secondary">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-low terminal-border hover:border-secondary transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary">code</span>
+<span class="font-medium text-white">GitHub</span>
+</div>
+<span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity text-secondary">north_east</span>
+</a>
+</div>
+</div>
+<!-- CTA Card -->
+<div class="relative overflow-hidden bg-surface-container-high terminal-border p-8 text-on-surface mt-12 border-l-4 border-l-primary">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-3 text-primary">Model Customization</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Looking to implement a specialized LLM or refine an existing ML pipeline? Let's discuss feasibility and architecture.
+                        </p>
+<a class="inline-flex items-center gap-2 text-sm font-bold text-secondary hover:text-white transition-colors" href="mailto:contact@pushkarrai.com">
+                            SEND_DIRECT_EMAIL
+                            <span class="material-symbols-outlined text-xs">mail</span>
+</a>
+</div>
+</div>
+<!-- Ambient Decoration -->
+<div class="mt-20 lg:mt-0 hidden lg:block">
+<img alt="Abstract Neural Network Visualization" class="w-full h-48 object-cover terminal-border grayscale invert brightness-125 opacity-20" data-alt="abstract minimalist 3D rendering of interconnected crystalline structures with soft blue lighting on a clean white background representing a neural network" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATBmIiUppp6W8splpqJHscK22cglc7rHC2FqMaAqI9EnoiSvJhh51EUdvxJOlIEkGIpdpFAfhEqBSaHEpmHpPEMVjNnLzms6UOVZ8gcyFFfudoEnpEekumQycLJExOwOoTTBde6TGSb6O_osEdfaZ9ygZV5c2VDLRrd0A4YpA6YI_CzTgRiAsCkfYYye1KDTuB2lSDb8KlQiAULgjg7gxbSrGBwG8GivFzY1KLwlhoMHvgWOXDRkS5u2TC2I4POV0oqFRKxLLIMkQ"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-96 bg-surface-container border-y border-outline-variant overflow-hidden">
+<div class="w-full h-full relative">
+<div class="absolute inset-0 bg-black/60 z-10 pointer-events-none"></div>
+<img alt="Clean Urban Map Context" class="w-full h-full object-cover grayscale invert opacity-30" data-alt="minimalist overhead city map view with clean geometric streets and muted pastel tones in soft daylight" data-location="Bengaluru" src="https://lh3.googleusercontent.com/aida-public/AB6AXBqJG1v7KRQS34XV-zL3Xz8KcGYacqCU98mtUf2o7onhaqRzpJxRzHvoz1-h1pvX-cNzX8RlDb_-lnRnlPVFJNiWzPpz5eRPNCT3DKzHnBgGu1csVbzlz9TgZcz2tIYx3hCcUOPpfrpCGljRbKD_x-V69BtaTX8hgM9lExOj3x0SUtrSOdNUA_184F_0sWQf1lTjhoiGQ5oGzjGgEZsr0TmgQoeGta0RO6XzDAT_CUd2w6O8AzFk3tBoxtCNVvVJNuscnPDC3KSXxc"/>
+<div class="absolute bottom-12 left-12 z-30 bg-black terminal-border p-6 border-l-4 border-l-secondary">
+<div class="flex items-center gap-3 text-secondary mb-1">
+<span class="material-symbols-outlined fill" style="font-variation-settings: 'FILL' 1;">push_pin</span>
+<span class="font-bold tracking-tight">ACTIVE_NODE</span>
+</div>
+<p class="text-sm font-medium text-white">Remote First • Physical presence in India</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-12 gap-6">
+<div class="font-['Space_Grotesk'] font-bold text-white text-lg flex items-center gap-2">
+<span class="w-2 h-2 bg-primary"></span>
+            Pushkar Rai
+        </div>
+<div class="text-on-surface-variant font-['Inter'] text-xs tracking-widest uppercase">
+            © 2024 PUSHKAR_RAI. SYSTEM_VERSION_3.1.0
+        </div>
+<div class="flex gap-8 text-on-surface-variant text-sm font-medium">
+<a class="hover:text-secondary transition-all" href="#">LINKEDIN</a>
+<a class="hover:text-secondary transition-all" href="#">GITHUB</a>
+<a class="hover:text-secondary transition-all" href="#">EMAIL</a>
+</div>
+</div>
+</footer>
+</body></html>
